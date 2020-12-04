@@ -1,0 +1,1 @@
+{"type":"Scene","props":{"width":1920,"height":1080},"compId":2,"child":[{"type":"Script","props":{"runtime":"NavMeshAgent/NavTest.js"},"compId":3}],"loadList":[],"loadList3D":[]}
