@@ -1,4 +1,5 @@
 import NavMeshAgent from "./NavMeshAgent";
+import CameraMove from "./CameraMove";
 
 /**
 *
@@ -31,10 +32,30 @@ export default class NavTest extends Laya.Script {
 		this.camera= sceneLoad.getChildByName("Main Camera");
 		this.agent=null;
 		this.agent=this.player.addComponent(NavMeshAgent);
-        this.agent.speed=10;
+		this.agent.speed=10;
+		
+		this.camera.addComponent(CameraMove);
         
 		Laya.loader.load(this.navUrl,Laya.Handler.create(this,this.onNavLoaded),null,"json");
 	}
+
+	onUpdate() {
+
+        if (Laya.KeyBoardManager.hasKeyDown(79)) {
+			this.camera.removeSelf();
+			this.camera.transform.localPosition = new Laya.Vector3(0,3,-5);
+			this.camera.transform.localRotationEuler = new Laya.Vector3(0,-180,0);
+			this.player.addChild(this.camera);
+		}
+
+		if (Laya.KeyBoardManager.hasKeyDown(80)) {
+			this.camera.removeSelf();
+			this.camera.transform.localPosition = new Laya.Vector3(0,79,0);
+			this.camera.transform.localRotationEuler = new Laya.Vector3(-90,180,0);
+			this.player.parent.addChild(this.camera);
+		}
+
+    }
 
 	onNavLoaded(){
 		var json=Laya.loader.getRes(this.navUrl);

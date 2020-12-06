@@ -302,9 +302,9 @@
 					"isStatic":false,
 					"layer":0,
 					"position":[
-						-26.93,
+						17.2,
 						0.5,
-						-20.07
+						-37.8
 					],
 					"rotation":[
 						0,

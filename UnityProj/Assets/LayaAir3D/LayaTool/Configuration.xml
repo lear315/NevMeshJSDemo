@@ -28,7 +28,7 @@
     <Ios>False</Ios>
     <Android>False</Android>
     <Conventional>True</Conventional>
-    <SavePath>/Users/lier/Downloads/LayaAir2.X-Unity-NavMesh-master/Unity项目（Unity2018.1.0）/outfile</SavePath>
+    <SavePath>/Users/lier/workspace/plugin/NevMeshPublic/NevMeshJSDemo/UnityProj/outfile</SavePath>
     <ScrollPositionY>0</ScrollPositionY>
   </config1>
   <config2>
@@ -156,5 +156,5 @@
     <ScrollPositionY>0</ScrollPositionY>
   </config5>
   <language>0</language>
-  <time>1606769879</time>
+  <time>1607273637</time>
 </LayaExportSetting>
